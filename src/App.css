@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
 
 /* The Delicious Food Recipes text surrounded by an h1 tag should use the 'Playfair Display SC' font that has already been imported in App.css. It should also be centered and have a size of 64px.
 
@@ -7,13 +6,39 @@ Read the documentation for nth-child. Use nth-child to set the width of the colu
 
 Use nth-child(odd) to set the table's zebra striping color pattern for the rows in tbody. The color in the mockup is #fff0c7 but feel free to use a color of your preference that suits the design.
 
-The preparation and ingredient columns should display a scrollbar if there is too much text. Use the predefinedcontent_td class and p tag to wrap the text so that it uses a scrollbar if the text is too long (e.g. <td className="content_td"><p>{(recipe.ingredients)}</p></td> ).
+The preparation and ingredient columns should display a scrollbar if there is too much text. Use the predefined content_td class and p tag to wrap the text so that it uses a scrollbar if the text is too long (e.g. <td className="content_td"><p>{(recipe.ingredients)}</p></td> ).
 
 Use the object-fit property to scale-down the images and set the image width and height to 100%.*/
 
 .App {
   padding: 1em;
 }
+img { 
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+h1 { 
+  font-family:'Playfair Display SC' ;
+     font-size: 64px;
+     text-align: center;
+}
+tr:nth-child(odd) {
+  background-color: #fff0c7 ;}
+
+  td:nth-child(4) {
+    width: 30% ;
+  }
+  td:nth-child(5) {
+    width: 30% ;
+  }
+  th:nth-child(4) {
+    width: 30% ;
+  }
+  th:nth-child(5) {
+    width: 30% ;
+  }
+
 
 label {
   display: inline-block;
@@ -27,25 +52,28 @@ header {
 /* typography */
 
 html {
-  font-family: 'helvetica neue', sans-serif;
+  font-family: "helvetica neue", sans-serif;
 }
 
-thead th, tfoot th {
-  font-family: 'Rock Salt';
+thead th,
+tfoot th {
+  font-family: "Rock Salt";
 }
 
 th {
   letter-spacing: 2px;
   padding: 10px;
+  width: 10%;
 }
 
 td {
   letter-spacing: 1px;
-  overflow-x:hidden;
-  overflow-y:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   font-size: 12px;
   padding: 10px;
   text-align: center;
+  width: 10%;
 }
 
 /* table */
@@ -54,7 +82,7 @@ table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  overflow:hidden;
+  overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -66,6 +94,5 @@ table {
 }
 
 /* Column Size for thead */
-
 
 /* Column size for tbody */

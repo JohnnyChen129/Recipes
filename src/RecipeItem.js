@@ -7,11 +7,10 @@ export default function RecipeItem({ recipe, deleteRecipe }) {
       <tr>
           <td>{recipe.name}</td>
           <td>{recipe.cuisine}</td>
-          <td>{recipe.photo}</td>
-          <td>{recipe.ingredients}</td>
+          <td><img src={recipe.photo}/></td>
+          <td className= "content_td"><p>{recipe.ingredients}</p></td>
           <td>{recipe.preparation}</td>
         <td>
-        
         <button onClick={deleteRecipe} name="delete">
           Delete
         </button>
