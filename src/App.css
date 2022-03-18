@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
 
+
+/* The Delicious Food Recipes text surrounded by an h1 tag should use the 'Playfair Display SC' font that has already been imported in App.css. It should also be centered and have a size of 64px.
+
+Read the documentation for nth-child. Use nth-child to set the width of the columns. We suggest setting the width for the preparation and ingredients columns to 30%. For the rest of the columns, set the width to 10%.
+
+Use nth-child(odd) to set the table's zebra striping color pattern for the rows in tbody. The color in the mockup is #fff0c7 but feel free to use a color of your preference that suits the design.
+
+The preparation and ingredient columns should display a scrollbar if there is too much text. Use the predefinedcontent_td class and p tag to wrap the text so that it uses a scrollbar if the text is too long (e.g. <td className="content_td"><p>{(recipe.ingredients)}</p></td> ).
+
+Use the object-fit property to scale-down the images and set the image width and height to 100%.*/
+
 .App {
   padding: 1em;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import RecipeItem from "./RecipeItem";
 function RecipeCreate() {
 
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
@@ -7,7 +7,7 @@ function RecipeCreate() {
   // TODO: Add the required submit and change handlers
   
   const name = "name"
-  
+
 
 
 
@@ -17,8 +17,7 @@ function RecipeCreate() {
         <tbody>
           <tr>
             <td></td>
-            <td> <input name="name">, <input name="cuisine">, <input name="photo">, <textarea name="ingredients">
-  <textarea name="preparation"></textarea>
+            <td> 
               <button type="submit">Create</button>
             </td>
           </tr>
