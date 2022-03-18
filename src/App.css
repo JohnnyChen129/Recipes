@@ -1,44 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
-
-/* The Delicious Food Recipes text surrounded by an h1 tag should use the 'Playfair Display SC' font that has already been imported in App.css. It should also be centered and have a size of 64px.
-
-Read the documentation for nth-child. Use nth-child to set the width of the columns. We suggest setting the width for the preparation and ingredients columns to 30%. For the rest of the columns, set the width to 10%.
-
-Use nth-child(odd) to set the table's zebra striping color pattern for the rows in tbody. The color in the mockup is #fff0c7 but feel free to use a color of your preference that suits the design.
-
-The preparation and ingredient columns should display a scrollbar if there is too much text. Use the predefined content_td class and p tag to wrap the text so that it uses a scrollbar if the text is too long (e.g. <td className="content_td"><p>{(recipe.ingredients)}</p></td> ).
-
-Use the object-fit property to scale-down the images and set the image width and height to 100%.*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
 
 .App {
   padding: 1em;
 }
-img { 
-  object-fit: scale-down;
-  width: 100%;
-  height: 100%;
-}
-h1 { 
-  font-family:'Playfair Display SC' ;
-     font-size: 64px;
-     text-align: center;
-}
-tr:nth-child(odd) {
-  background-color: #fff0c7 ;}
-
-  td:nth-child(4) {
-    width: 30% ;
-  }
-  td:nth-child(5) {
-    width: 30% ;
-  }
-  th:nth-child(4) {
-    width: 30% ;
-  }
-  th:nth-child(5) {
-    width: 30% ;
-  }
-
 
 label {
   display: inline-block;
@@ -49,32 +13,50 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+img{
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
 /* typography */
 
 html {
-  font-family: "helvetica neue", sans-serif;
+  font-family: 'helvetica neue', sans-serif;
 }
 
-thead th,
-tfoot th {
-  font-family: "Rock Salt";
+h1 {
+  font-family: 'Playfair Display sc';
+  size: 64px;
+  text-align: center;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt';
 }
 
 th {
   letter-spacing: 2px;
   padding: 10px;
+  background-color: #fff;
   width: 10%;
 }
 
 td {
   letter-spacing: 1px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x:hidden;
+  overflow-y:hidden;
   font-size: 12px;
   padding: 10px;
   text-align: center;
   width: 10%;
 }
+
+th:nth-child(4){width: 30%;}
+th:nth-child(5){width: 30%;}
+
+td:nth-child(4){width: 30%;}
+td:nth-child(5){width: 30%;}
 
 /* table */
 
@@ -82,7 +64,7 @@ table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  overflow: hidden;
+  overflow:hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -93,6 +75,16 @@ table {
   text-overflow: ellipsis;
 }
 
+tr:nth-child(odd) {background: #fdeec7}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
 /* Column Size for thead */
+
 
 /* Column size for tbody */
